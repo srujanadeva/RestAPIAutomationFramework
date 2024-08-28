@@ -23,7 +23,7 @@ public class AirlinesTest extends AirlineAPIs {
         //String endPoint = "https://api.instantwebtools.net/v1/airlines";
 
 
-        Map<String, Object> payload = PayLoads.getCreateAirlinePayloadFromMap("998877665","KGH", "IN", "KGH logo", "JKGH", "KA", "www.kgh.com", "1989");
+        Map<String, Object> payload = PayLoads.getCreateAirlinePayloadFromMap("11998877665","KGH", "IN", "KGH logo", "JKGH", "KA", "www.kgh.com", "1989");
         //Response response = RestUtils.performPost(endPoint,payload, new HashMap<>());
         Response response = createAirline(payload);
         Assert.assertEquals(response.statusCode(), 200);
